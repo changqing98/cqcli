@@ -1,5 +1,4 @@
 {
-    "cSpell.words": [
-        "Cqcli"
-    ]
+    "python.formatting.provider": "black",
+    "python.pythonPath": "/Users/changqing/opt/miniconda3/bin/python"
 }
