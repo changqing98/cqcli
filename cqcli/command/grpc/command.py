@@ -1,8 +1,8 @@
-from ..definition import Command
+from ..definition import Command, SingleActionCommand
 from . import action, option
 
 
-class GrpcCommand(Command):
+class GrpcCommand(SingleActionCommand):
     name = "grpc"
     help_doc = "GRPC相关操作"
 

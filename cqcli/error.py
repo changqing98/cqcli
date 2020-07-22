@@ -1,5 +1,6 @@
 import click
 
+third_party_exc_resolve_order = []
 
 class CqcliError(object):
     """Base class for exceptions"""
@@ -8,10 +9,14 @@ class CqcliError(object):
         super().__init__()
         self.message = message
 
-    def display_error_msg(self):
+    def print_error_msg(self):
         """Output error message"""
         click.secho("Error:", fg="red")
         click.secho(self.message)
 
     def print_help_msg(self):
         """Output help message """
+
+
+def try_to_handle_third_party_exception(error):
+    """"""

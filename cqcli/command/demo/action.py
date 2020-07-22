@@ -2,9 +2,9 @@ from cqcli.command.definition import SingleAction
 from cqcli.command.grpc import option
 
 
-class Generate(SingleAction):
-    name = "generate"
-    help_msg = "生成gRPC api"
+class TestAction(SingleAction):
+    name = "test"
+    help_msg = "Test action"
     example_doc = []
 
     @property
@@ -15,4 +15,4 @@ class Generate(SingleAction):
         print("Not implement")
 
 
-ALL = [Generate()]
+ALL = [TestAction()]
