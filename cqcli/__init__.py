@@ -2,7 +2,7 @@ import logging
 
 from . import config
 
-__version__ = '1.0.0'
+version = '1.1.3'
 
 # 设置 logging 的配置
 level = logging._nameToLevel[config.LOG_LEVEL.upper()]
