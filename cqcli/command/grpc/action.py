@@ -1,11 +1,13 @@
-from cqcli.command.definition import SingleAction
 from cqcli.command.grpc import option
+from ..base_action import BaseAction
 
 
-class Generate(SingleAction):
+class Generate(BaseAction):
     name = "generate"
     help_msg = "生成gRPC api"
-    example_doc = []
+    example_doc = [
+        ('-o/--output ./', '输出路径 ')
+    ]
 
     @property
     def options(self):

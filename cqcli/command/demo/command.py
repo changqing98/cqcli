@@ -1,8 +1,8 @@
 from . import action, option
-from ..definition import SingleActionCommand
+from ..base_command import BaseSingleActionCommand
 
 
-class DemoCommand(SingleActionCommand):
+class DemoCommand(BaseSingleActionCommand):
     name = "demo"
     help_doc = "Demo command"
 

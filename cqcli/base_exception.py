@@ -2,7 +2,8 @@ import click
 
 third_party_exc_resolve_order = []
 
-class CqcliError(object):
+
+class BaseException(Exception):
     """Base class for exceptions"""
 
     def __init__(self, message):
@@ -18,5 +19,5 @@ class CqcliError(object):
         """Output help message """
 
 
-def try_to_handle_third_party_exception(error):
+def try_to_handle_third_party_exception():
     """"""
