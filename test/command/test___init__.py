@@ -8,4 +8,4 @@ class Test(TestCase):
     def test_get_all_commands(self):
         cmds = command.get_all_commands()
         logging.info("Cmds: %s" % [cmd.name for cmd in cmds])
-        self.assertEqual(['demo', 'grpc'], [cmd.name for cmd in cmds])
+        self.assertEqual(['grpc'], [cmd.name for cmd in cmds])

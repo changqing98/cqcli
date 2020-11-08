@@ -1,5 +1,5 @@
 from cqcli.command.grpc import option
-from ..base_action import BaseAction
+from cqcli.infrastructure.base_action import BaseAction
 
 
 class Generate(BaseAction):
@@ -13,8 +13,8 @@ class Generate(BaseAction):
     def options(self):
         return option.ALL
 
-    def run(self):
-        print("Not implement")
+    def run(self, version):
+        print(f'Do generate, version: {version}')
 
 
 ALL = [Generate()]

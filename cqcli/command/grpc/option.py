@@ -1,14 +1,19 @@
-import click
+from cqcli.infrastructure.base_option import BaseOption
 
-output_path = click.Option(
-    param_decls=('-o', '--output'),
+output_path = BaseOption(
+    param=('-o', '--output'),
     help="输出路径",
     default='./'
 )
 
-language = click.Option(
-    param_decls=('-l', '--language'),
+language = BaseOption(
+    param=('-l', '--language'),
     help="输出语言"
 )
 
-ALL = [output_path]
+version = BaseOption(
+    param=('-v', '--version'),
+    help="版本",
+    default="1.0.0"
+)
+ALL = [output_path, version]

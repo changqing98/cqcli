@@ -1,4 +1,7 @@
-class Service:
+from abc import ABC
+
+
+class Service(ABC):
     name = ''
     display_name = ''
     description = ''

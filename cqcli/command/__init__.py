@@ -1,7 +1,7 @@
 import importlib
 import os
 
-from .base_command import BaseCommand
+from cqcli.infrastructure.base_command import BaseCommand
 
 
 def get_all_commands() -> list:

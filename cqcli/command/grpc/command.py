@@ -1,8 +1,8 @@
 from . import action, option
-from ..base_command import BaseSingleActionCommand
+from ...infrastructure.base_command import BaseCommand
 
 
-class GrpcCommand(BaseSingleActionCommand):
+class GrpcBaseCommand(BaseCommand):
     name = "grpc"
     help_doc = "gRPC相关操作"
 
@@ -15,4 +15,4 @@ class GrpcCommand(BaseSingleActionCommand):
         return option.ALL
 
 
-command = GrpcCommand()
+command = GrpcBaseCommand()
